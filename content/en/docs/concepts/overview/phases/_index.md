@@ -1,9 +1,7 @@
 ---
-title: Tasks
-description: This section of the documentation describes how to do individual tasks with Keptn.
+title: Phases
 icon: concepts
 layout: quickstart
-weight: 40
+weight: 10
 hidechildren: true # this flag hides all sub-pages in the sidebar-multicard.html
 ---
-
