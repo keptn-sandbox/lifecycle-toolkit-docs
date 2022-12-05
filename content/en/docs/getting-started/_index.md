@@ -7,7 +7,7 @@ weight: 15
 hidechildren: true # this flag hides all sub-pages in the sidebar-multicard.html
 ---
 
-The Keptn Lifecycle Toolkit brings application-awareness to your Kubernetes cluster and helps you reliably delivering your application with:
+The Keptn Lifecycle Toolkit makes your deployments observable, brings application-awareness to your Kubernetes cluster and helps you reliably delivering your application with:
 
 * Pre-Deployment Tasks: e.g. checking for dependant services, checking if the cluster is ready for the deployment, etc.
 * Pre-Deployment Evaluations: e.g. evaluate metrics before your application gets deployed (e.g. layout of the cluster
@@ -29,25 +29,8 @@ All of these things can be executed on a workload or on an application level, wh
     * See (https://kubernetes.io/docs/tasks/tools/) for more information
 
 ## Install the Keptn Lifecycle Toolkit
-At the moment, the lifecycle controller needs *cert-manager* to be installed. Therefore, you can install cert-manager using:
 
-<!-- 
-[cert-manager](https://github.com/cert-manager/cert-manager/releases/download/v1.10.0/cert-manager.yaml)
--->
-```
-kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.10.0/cert-manager.yaml
-kubectl wait --for=condition=Available deployment/cert-manager-webhook -n cert-manager --timeout=60s
-```
-
-After that, you can install the lifecycle toolkit using the current release manifest:
-<!---x-release-please-start-version-->
-```
-kubectl apply -f https://github.com/keptn/lifecycle-toolkit/releases/download/v0.4.0/manifest.yaml
-kubectl wait --for=condition=Available deployment/klc-controller-manager -n keptn --timeout=120s
-```
-<!---x-release-please-end-->
-
-Now, the Lifecycle Toolkit and its dependency is installed and ready to use.
+{{% readfile file="/docs/snippets/tasks/install.md" markdown="true" %}}
 
 ## The Demo Application
 For this demonstration, we use a slightly modified version of [the PodTatoHead](https://github.com/podtato-head/podtato-head).
