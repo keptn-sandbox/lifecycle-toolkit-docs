@@ -32,6 +32,20 @@ All of these things can be executed on a workload or on an application level, wh
 
 {{% readfile file="/docs/snippets/tasks/install.md" markdown="true" %}}
 
+## Check out the Getting Started Repository
+For the further progress of this guide, we need a sample application as well as some helpers which makes it easier for your to set up your environment. These things can be found in our Getting Started repository which can be checked out as follows:
+
+```console
+git clone https://github.com/keptn/lifecycle-toolkit-getting-started.git
+cd lifecycle-toolkit-getting-started
+```
+
+## Install the required observability features
+In order to use the observability features of the lifecycle toolkit, we need a monitoring and tracing backend. In this guide, we will use Prometheus for Metrics, Jaeger for Traces and Grafana for Dashboarding. 
+```
+make install-observability
+```
+
 ## The Demo Application
 For this demonstration, we use a slightly modified version of [the PodTatoHead](https://github.com/podtato-head/podtato-head).
 

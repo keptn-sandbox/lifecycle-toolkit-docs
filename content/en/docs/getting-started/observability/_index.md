@@ -1,9 +1,9 @@
 ---
-title: Adding Observability to your deployments
+title: Adding Observability
 description: Learn how to use the observability features of the lifecycle toolkit
 icon: concepts
 layout: quickstart
-weight: 20  
+weight: 30  
 hidechildren: true # this flag hides all sub-pages in the sidebar-multicard.html
 ---
 In this example, we will show you an example configuration for enabling the operator to send OpenTelemetry traces and metrics to the [OpenTelemetry Collector](https://github.com/open-telemetry/opentelemetry-collector).

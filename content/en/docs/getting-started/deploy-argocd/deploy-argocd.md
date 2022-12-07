@@ -1,9 +1,9 @@
 ---
-title: Deploy the Demo Application
-description: Deploy the Demo Application using kubectl
+title: Deploy the Demo Application using ArgoCD
+description: Deploy the Demo Application using ArgoCD
 icon: concepts
 layout: quickstart
-weight: 15
+weight: 20
 hidechildren: true # this flag hides all sub-pages in the sidebar-multicard.html
 ---
 The Keptn Lifecycle Toolkit brings application-awareness to your Kubernetes cluster and helps you reliably delivering your application with:
