@@ -36,7 +36,7 @@ For the further progress of this guide, we need a sample application as well as 
 
 ```console
 git clone https://github.com/keptn-sandbox/keptn-lifecycle-toolkit-examples.git
-cd lifecycle-toolkit-getting-started
+cd keptn-lifecycle-toolkit-examples
 ```
 
 ## Install the required observability features
@@ -57,7 +57,7 @@ In the first version of the Demo application, the Keptn Lifecycle Toolkit evalua
 
 To install it, simply apply the manifest:
 ```shell
-kubectl apply -f sample-app/version-1
+make deploy-version-1
 ```
 
 You can watch the progress of the deployment as follows:
@@ -72,7 +72,7 @@ kubectl get keptnworkloadinstances -n podtato-kubectl
 This will show the current status of the Workloads and in which phase they are at the moment. You can get more detailed information about the workloads by describing one of the resources:
 
 ```shell
-kubectl describe keptnworkloadinstances entry -n podtato-kubectl
+kubectl describe keptnworkloadinstances podtato-head-podtato-head-entry -n podtato-kubectl
 ```
 
 Note that there are more detailed information in the event stream of the object.
@@ -100,7 +100,7 @@ Furthermore, you can port-forward the podtato-head service to your local machine
 make port-forward-grafana
 ```
  
-In your browser (http://localhost:3000), you can open the Dashboard `Keptn Applications` and see the current state of the application which should be similar to the following:
+In your browser (http://localhost:3000, Log in with the user 'admin' and the password 'admin'), you can open the Dashboard `Keptn Applications` and see the current state of the application which should be similar to the following:
 
 ![grafana.png](assets/grafana.png)
 
