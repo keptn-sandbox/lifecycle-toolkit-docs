@@ -28,6 +28,18 @@ All of these things can be executed on a workload or on an application level, wh
 * kubectl installed on your system
     * See (https://kubernetes.io/docs/tasks/tools/) for more information
 
+## Check Kubernetes Version
+
+Run the following and ensure both client and server version are greater than or equal to v1.24.
+
+```
+kubectl version --short
+```
+
+The output should look like this. In this example, both client and server are at v1.24.0 so the Keptn Lifecycle Toolkit will work.
+
+{{% readfile file="/docs/snippets/tasks/k8s_version_output.md" markdown="true" %}}
+
 ## Install the Keptn Lifecycle Toolkit
 {{% readfile file="/docs/snippets/tasks/install.md" markdown="true" %}}
 
