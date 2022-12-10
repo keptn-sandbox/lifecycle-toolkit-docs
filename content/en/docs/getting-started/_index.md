@@ -52,7 +52,12 @@ cd keptn-lifecycle-toolkit-examples
 ```
 
 ## Install the required observability features
-In order to use the observability features of the lifecycle toolkit, we need a monitoring and tracing backend. In this guide, we will use Prometheus for Metrics, Jaeger for Traces and Grafana for Dashboarding. 
+The Keptn Lifecycle Toolkit emits OpenTelemetry data as standard but the toolkit does not come pre-bundled with Observability backend tooling. This is deliberate as it provides flexibility for you to bring your own Observability backend which consume this emitted data.
+
+In order to use the observability features of the lifecycle toolkit, we need a monitoring and tracing backend.
+
+In this guide, we will use [Prometheus](https://prometheus.io/) for Metrics, [Jaeger](https://jaegertracing.io) for Traces and [Grafana](https://github.com/grafana/) for Dashboarding.
+
 ```
 make install-observability
 ```
