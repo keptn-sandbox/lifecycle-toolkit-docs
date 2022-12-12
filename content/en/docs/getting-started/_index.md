@@ -74,7 +74,7 @@ In the first version of the Demo application, the Keptn Lifecycle Toolkit evalua
 
 To install it, simply apply the manifest:
 ```shell
-make deploy-version-1
+kubectl apply -k sample-app/version-1
 ```
 
 You can watch the progress of the deployment as follows:
