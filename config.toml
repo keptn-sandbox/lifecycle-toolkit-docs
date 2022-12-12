@@ -114,16 +114,16 @@ archived_version = false
 # The version number for the version of the docs represented in this doc set.
 # Used in the "version-banner" partial to display a version number for the 
 # current doc set.
-version = "0.0"
+version = "0.4.1"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://example.com"
+url_latest_version = "https://lifecycle.keptn.sh"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/keptn-sandbox/keptn-lifecycle-toolkit-docs"
+github_repo = "https://github.com/keptn-sandbox/lifecycle-toolkit-docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/keptn/keptn-lifecycle-toolkit"
+github_project_repo = "https://github.com/keptn/lifecycle-toolkit"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
