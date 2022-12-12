@@ -137,7 +137,7 @@ In this case, we see the name of the failed pre-deployment evaluation and the re
 To achieve this, we changed the operator in the evaluation file (sample-app/version-2/app-pre-deploy-eval) from `<` to `>` and applied the new manifest:
 
 ```shell
-kubectl apply -f sample-app/version-2
+make deploy-version-2
 ```
 
 After this, you can inspect the new state of the application using the same commands as before. You should see that the deployment is now successful and that the trace is also updated. You should also see in the Grafana Dashboards that the deployment was successful.
