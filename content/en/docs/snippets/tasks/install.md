@@ -11,7 +11,7 @@ kubectl wait --for=condition=Available deployment/cert-manager-webhook -n cert-m
 After that, you can install the lifecycle toolkit using the current release manifest:
 <!---x-release-please-start-version-->
 ```
-kubectl apply -f https://github.com/keptn/lifecycle-toolkit/releases/download/v0.4.0/manifest.yaml
+kubectl apply -f https://github.com/keptn/lifecycle-toolkit/releases/download/v0.4.1/manifest.yaml
 kubectl wait --for=condition=Available deployment/klc-controller-manager -n keptn-lifecycle-toolkit-system --timeout=120s
 ```
 <!---x-release-please-end-->
