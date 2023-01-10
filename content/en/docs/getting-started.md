@@ -1,10 +1,8 @@
 ---
 title: Getting Started
-description: Learn how to use the Keptn Lifecycle Toolkit and explore basic features.
-icon: concepts
-layout: quickstart
+linktitle: Getting Started
+description: Learn how to use the Keptn Lifecycle Toolkit.
 weight: 15
-hidechildren: true # this flag hides all sub-pages in the sidebar-multicard.html
 ---
 
 The Keptn Lifecycle Toolkit makes your deployments observable, brings application-awareness to your Kubernetes cluster and helps you reliably delivering your application with:
