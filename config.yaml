@@ -1,132 +1,109 @@
-baseURL: "/"
-title: "keptn"
-enableRobotsTXT: true
-enableEmoji: true
-
-# Language configuration
+baseURL: /
+contentDir: content/en
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: false
-enableMissingTranslationPlaceholders: true
-
-# Provide .LastMod values
+enableEmoji: true
 enableGitInfo: true
-
-contentDir: "content/en"
-
-taxonomies:
-  tag: "tags"
-  category: "categories"
-
-module:
-  proxy: direct
-  hugoVersion:
-    extended: true
-  imports:
-    - path: github.com/google/docsy
-      disable: false
-    - path: github.com/google/docsy/dependencies
-      disable: false
-
-
-# Markup settings
-# Ref: https://gohugo.io/getting-started/configuration-markup#goldmark
+enableMissingTranslationPlaceholders: true
+enableRobotsTXT: true
+imaging:
+  anchor: smart
+  quality: 75
+  resampleFilter: CatmullRom
+languages:
+  en:
+    languageCode: en
+    languageName: English
+    time_format_blog: 2006-01-02
+    time_format_default: 2006-01-02
 markup:
   goldmark:
     renderer:
       unsafe: true
   highlight:
-    # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
     style: friendly
   parser:
     autoHeadingID: true
     autoHeadingIDType: github
-
-languages:
-  en:
-    languageName: English
-    languageCode: en
-    time_format_default: 2006-01-02
-    time_format_blog: 2006-01-02
-
-permalinks:
-  blog = "/:section/:year/:month/:day/:slug/"
-
-imaging:
-  resampleFilter: "CatmullRom"
-  quality: 75
-  anchor: "smart"
-
+module:
+  hugoVersion:
+    extended: true
+  imports:
+  - disable: false
+    path: github.com/google/docsy
+  - disable: false
+    path: github.com/google/docsy/dependencies
+  proxy: direct
 outputs:
-  home: [HTML]
-  page: [HTML]
-
+  home:
+  - HTML
+  page:
+  - HTML
 params:
-  description: Cloud-native application life-cycle orchestration
+  algolia_docsearch: false
   copyright: Keptn Community
-  github_repo: https://github.com/keptn/lifecycle-toolkit
+  description: Cloud-native application life-cycle orchestration
   github_branch: main
   github_project_repo: https://github.com/keptn/lifecycle-toolkit
-  slack: https://cloud-native.slack.com/messages/keptn
-  # Enable Algolia DocSearch
-  algolia_docsearch: false
+  github_repo: https://github.com/keptn/lifecycle-toolkit
+  links:
+    developer:
+    - desc: Development takes place here!
+      icon: fab fa-github
+      name: GitHub
+      url: https://github.com/keptn/lifecycle-toolkit
+    - desc: Chat with other project developers
+      icon: fab fa-slack
+      name: Slack
+      url: https://cloud-native.slack.com/messages/keptn
+    - desc: Watch videos about Keptn
+      icon: fab fa-youtube
+      name: Keptn YouTube channel
+      url: https://youtube.com/@keptn
+    user:
+    - desc: Follow us on Twitter to get the latest news!
+      icon: fab fa-twitter
+      name: Twitter
+      url: https://twitter.com/KeptnProject
+    - icon: fab fa-linkedin
+      name: LinkedIn
+      url: https://www.linkedin.com/company/keptnproject
+  markmap:
+    enable: true
   offlineSearch: true
-  version_menu: "Releases"
-  version: "0.4.1"
-  url_latest_version: https://lifecycle.keptn.sh
+  slack: https://cloud-native.slack.com/messages/keptn
   taxonomy:
     pygmentsCodeFences: true
     pygmentsUseClasses: true
     pygmentsUseClassic: false
-
     taxonomyCloud:
-      - "tags"
-      - "categories"
-
+    - tags
+    - categories
     taxonomyCloudTitle:
-      - "tags"
-      - "categories"
-
+    - tags
+    - categories
     taxonomyPageHeader:
-      - "tags"
-      - "categories"
-
+    - tags
+    - categories
   ui:
-    # Enable to show the side bar menu in its compact state.
+    breadcrumb_disable: false
+    footer_about_disable: false
+    header_search_disable: true
+    navbar_logo: true
     sidebar_menu_compact: true
     sidebar_menu_foldable: true
     sidebar_menu_truncate: 1000
-    # Set to true to disable breadcrumb navigation.
-    breadcrumb_disable: false
-    # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
     sidebar_search_disable: false
-    # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top nav bar
-    navbar_logo: true
-    # Set to true to disable the About link in the site footer
-    footer_about_disable: false
-    header_search_disable: true
-  markmap:
-    enable: true
-  links:
-    # End user relevant links. These will show up on left side of footer and in the community page if you have one.
-    user:
-      - name: Twitter
-        url: "https://twitter.com/KeptnProject"
-        icon: fab fa-twitter
-        desc: Follow us on Twitter to get the latest news!
-      - name: LinkedIn
-        url: https://www.linkedin.com/company/keptnproject
-        icon: fab fa-linkedin
-    # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
-    developer:
-      - name: GitHub
-        url: "https://github.com/keptn/lifecycle-toolkit"
-        icon: fab fa-github
-        desc: Development takes place here!
-      - name: Slack
-        url: https://cloud-native.slack.com/messages/keptn
-        icon: fab fa-slack
-        desc: Chat with other project developers
-      - name: Keptn YouTube channel
-        url: https://youtube.com/@keptn
-        icon: fab fa-youtube
-        desc: Watch videos about Keptn
+  url_latest_version: https://lifecycle.keptn.sh
+  version: 0.5.0
+  version_menu: Releases
+  versions:
+  - url: /docs-0.5.0/
+    version: 0.5.0
+  - url: /docs-0.4.1/
+    version: 0.4.1
+permalinks: blog = "/:section/:year/:month/:day/:slug/"
+taxonomies:
+  category: categories
+  tag: tags
+title: keptn
