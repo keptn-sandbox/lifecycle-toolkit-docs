@@ -45,7 +45,7 @@ params:
   description: Cloud-native application life-cycle orchestration
   github_branch: main
   github_project_repo: https://github.com/keptn/lifecycle-toolkit
-  github_repo: https://github.com/keptn/lifecycle-toolkit
+  github_repo: https://github.com/keptn-sandbox/lifecycle-toolkit-docs
   links:
     developer:
     - desc: Development takes place here!
