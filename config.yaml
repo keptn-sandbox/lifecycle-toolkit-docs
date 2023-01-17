@@ -102,6 +102,8 @@ params:
     version: 0.5.0
   - url: /docs-0.4.1/
     version: 0.4.1
+  - url: /docs-dev/
+    version: dev
 permalinks: blog = "/:section/:year/:month/:day/:slug/"
 taxonomies:
   category: categories
