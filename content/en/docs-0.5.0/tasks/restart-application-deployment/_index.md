@@ -72,6 +72,7 @@ spec:
         component: podtato-head-entry
         keptn.sh/workload: podtato-head-entry
         keptn.sh/app: podtato-head
+        keptn.sh/version: "0.1.2"
     spec:
       terminationGracePeriodSeconds: 5
       containers:
