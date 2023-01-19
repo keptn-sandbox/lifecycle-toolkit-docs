@@ -46,7 +46,7 @@ params:
   github_branch: main
   github_project_repo: https://github.com/keptn/lifecycle-toolkit
   github_repo: https://github.com/keptn/lifecycle-toolkit
-  github_subdir: 'docs'
+  github_subdir: docs
   links:
     developer:
     - desc: Development takes place here!
