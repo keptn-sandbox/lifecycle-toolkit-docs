@@ -98,6 +98,7 @@ params:
   url_latest_version: https://lifecycle.keptn.sh
   version: 0.5.0
   version_menu: Releases
+  version_menu_pagelinks: true
   versions:
   - url: /docs-0.5.0/
     version: 0.5.0
