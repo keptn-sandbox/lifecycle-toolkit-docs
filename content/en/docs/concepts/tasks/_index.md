@@ -51,7 +51,7 @@ spec:
       url: <url>
 ```
 
-An example is available [here](./examples/taskonly-hello-keptn/http/taskdefinition.yaml).
+An example is available [here](https://github.com/keptn-sandbox/lifecycle-toolkit-examples/blob/main/sample-app/version-1/app-pre-deploy.yaml).
 
 Finally, `KeptnTaskDefinition` can build on top of other `KeptnTaskDefinition`s.
 This is a common use case where a general function can be re-used in multiple places with different parameters.
