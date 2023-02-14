@@ -96,13 +96,15 @@ params:
     sidebar_menu_truncate: 1000
     sidebar_search_disable: false
   url_latest_version: https://lifecycle.keptn.sh
-  version: 0.5.0
+  version: v0.6.0
   version_menu: Releases
   versions:
   - url: /docs-0.5.0/
     version: 0.5.0
   - url: /docs-0.4.1/
     version: 0.4.1
+  - url: /docs-v0.6.0/
+    version: v0.6.0
   - url: /docs-dev/
     version: dev
 permalinks: blog = "/:section/:year/:month/:day/:slug/"
