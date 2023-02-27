@@ -12,7 +12,7 @@ The Keptn Lifecycle Toolkit makes your deployments observable, brings applicatio
 * Post-Deployment Tasks: e.g. trigger a test, trigger a deployment to another cluster, etc.
 * Post-Deployment Evaluations: e.g. evaluate the deployment, evaluate the test results, etc.
 
-All of these things can be executed on a workload or on an application level, whereby an application is a collection of multiple workloads.
+All of these things can be executed on a workload or on an application level, whereby an application is a collection of multiple [workloads]({{< ref "/docs/concepts/workloads" >}}).
 
 ## What you will learn here
 * Use the Keptn Lifecycle Toolkit to control the deployment of your application
@@ -78,13 +78,14 @@ make deploy-version-1
 You can watch the progress of the deployment as follows:
 <details>
 <summary>Watch workload state</summary>
-When the Lifecycle Toolkit detects workload labels ("app.kubernetes.io/name" and "keptn.sh/workload") on a resource, a KeptnWorkloadInstance (kwi) resource will be created. Using this resource you can watch the progress of the deployment.
+
+When the Lifecycle Toolkit detects [workload]({{< ref "/docs/concepts/workloads" >}}) labels ("app.kubernetes.io/name" and "keptn.sh/workload") on a resource, a KeptnWorkloadInstance (kwi) resource will be created. Using this resource you can watch the progress of the deployment.
 
 ```shell
 kubectl get keptnworkloadinstances -n podtato-kubectl
 ```
 
-This will show the current status of the Workloads and in which phase they are at the moment. You can get more detailed information about the workloads by describing one of the resources:
+This will show the current status of the [Workloads]({{< ref "/docs/concepts/workloads" >}}) and in which phase they are at the moment. You can get more detailed information about the [Workloads]({{< ref "/docs/concepts/workloads" >}}) by describing one of the resources:
 
 ```shell
 kubectl describe keptnworkloadinstances podtato-head-podtato-head-entry -n podtato-kubectl
