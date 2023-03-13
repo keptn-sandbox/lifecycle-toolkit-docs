@@ -1,0 +1,53 @@
+baseURL: /
+contentDir: content/en
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+enableEmoji: true
+enableGitInfo: true
+enableMissingTranslationPlaceholders: true
+enableRobotsTXT: true
+
+imaging:
+  anchor: smart
+  quality: 75
+  resampleFilter: CatmullRom
+
+languages:
+  en:
+    languageCode: en
+    languageName: English
+    time_format_blog: 2006-01-02
+    time_format_default: 2006-01-02
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    style: friendly
+  parser:
+    autoHeadingID: true
+    autoHeadingIDType: github
+
+module:
+  hugoVersion:
+    extended: true
+  imports:
+    - disable: false
+      path: github.com/google/docsy
+    - disable: false
+      path: github.com/google/docsy/dependencies
+  proxy: direct
+
+outputs:
+  home:
+    - HTML
+  page:
+    - HTML
+
+permalinks: blog = "/:section/:year/:month/:day/:slug/"
+taxonomies:
+  category: categories
+  tag: tags
+title: keptn

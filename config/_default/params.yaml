@@ -1,0 +1,57 @@
+algolia_docsearch: false
+copyright: Keptn Community
+description: Cloud-native application life-cycle orchestration
+github_branch: main
+github_project_repo: https://github.com/keptn/docs-tooling
+github_repo: https://github.com/keptn/docs-tooling
+github_subdir: docs
+links:
+  developer:
+
+  user:
+    - desc: Development takes place here!
+      icon: fab fa-github
+      name: GitHub
+      url: https://github.com/keptn/
+    - desc: Chat with other project developers
+      icon: fab fa-slack
+      name: Slack
+      url: https://cloud-native.slack.com/messages/keptn
+    - desc: Watch videos about Keptn
+      icon: fab fa-youtube
+      name: Keptn YouTube channel
+      url: https://youtube.com/@keptn
+    - desc: Follow us on Twitter to get the latest news!
+      icon: fab fa-twitter
+      name: Twitter
+      url: https://twitter.com/KeptnProject
+    - icon: fab fa-linkedin
+      name: LinkedIn
+      url: https://www.linkedin.com/company/keptnproject
+markmap:
+  enable: true
+offlineSearch: true
+slack: https://cloud-native.slack.com/messages/keptn
+taxonomy:
+  pygmentsCodeFences: true
+  pygmentsUseClasses: true
+  pygmentsUseClassic: false
+  taxonomyCloud:
+    - tags
+    - categories
+  taxonomyCloudTitle:
+    - tags
+    - categories
+  taxonomyPageHeader:
+    - tags
+    - categories
+ui:
+  breadcrumb_disable: false
+  footer_about_disable: false
+  header_search_disable: true
+  navbar_logo: true
+  sidebar_menu_compact: true
+  sidebar_menu_foldable: true
+  sidebar_menu_truncate: 1000
+  sidebar_search_disable: false
+version_menu: Releases
