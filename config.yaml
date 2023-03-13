@@ -44,15 +44,15 @@ params:
   copyright: Keptn Community
   description: Cloud-native application life-cycle orchestration
   github_branch: main
-  github_project_repo: https://github.com/keptn/lifecycle-toolkit
-  github_repo: https://github.com/keptn/lifecycle-toolkit
+  github_project_repo: https://github.com/keptn/docs-tooling
+  github_repo: https://github.com/keptn/docs-tooling
   github_subdir: docs
   links:
     developer:
     - desc: Development takes place here!
       icon: fab fa-github
       name: GitHub
-      url: https://github.com/keptn/lifecycle-toolkit
+      url: https://github.com/keptn/
     - desc: Chat with other project developers
       icon: fab fa-slack
       name: Slack
@@ -95,18 +95,7 @@ params:
     sidebar_menu_foldable: true
     sidebar_menu_truncate: 1000
     sidebar_search_disable: false
-  url_latest_version: https://lifecycle.keptn.sh
-  version: v0.6.0
   version_menu: Releases
-  versions:
-  - url: /docs-0.5.0/
-    version: 0.5.0
-  - url: /docs-0.4.1/
-    version: 0.4.1
-  - url: /docs-v0.6.0/
-    version: v0.6.0
-  - url: /docs-dev/
-    version: dev
 permalinks: blog = "/:section/:year/:month/:day/:slug/"
 taxonomies:
   category: categories

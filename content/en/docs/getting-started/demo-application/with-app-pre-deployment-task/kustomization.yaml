@@ -1,9 +1,0 @@
-bases:
-  - ../with-app-awareness
-
-resources:
-  - workload-pre-deploy.yaml
-
-patchesStrategicMerge:
-  - manifest.yaml
-  - app.yaml

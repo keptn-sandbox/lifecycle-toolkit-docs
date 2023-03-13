@@ -1,8 +1,0 @@
-bases:
-  - ../base
-
-resources:
-  - app.yaml
-
-patchesStrategicMerge:
-  - manifest.yaml
