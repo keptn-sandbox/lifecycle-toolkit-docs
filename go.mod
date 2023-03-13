@@ -1,4 +1,4 @@
-module github.com/keptn-sandbox/lifecycle-toolkit-docs
+module github.com/keptn/docs-tooling
 
 go 1.19
 
