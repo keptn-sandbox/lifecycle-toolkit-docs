@@ -11,11 +11,11 @@ links:
   user:
     - desc: Development takes place here!
       icon: fab fa-github
-      name: GitHub
+      name: Keptn GitHub Organization
       url: https://github.com/keptn/
     - desc: Chat with other project developers
       icon: fab fa-slack
-      name: Slack
+      name: Keptn Slack
       url: https://cloud-native.slack.com/messages/keptn
     - desc: Watch videos about Keptn
       icon: fab fa-youtube
