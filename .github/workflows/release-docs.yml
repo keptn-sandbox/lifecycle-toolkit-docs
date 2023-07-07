@@ -75,7 +75,7 @@ jobs:
         run: |
             cp -R ./docs/content/en/docs/. "${{ inputs.page_dir }}${{ inputs.docs_dir }}/content/en/${{ steps.folder.outputs.name}}"
             echo "${{ inputs.tag_name }}" > "${{ inputs.page_dir }}${{ inputs.docs_dir }}/content/en/${{ steps.folder.outputs.name}}/version"
-            sed -i 's/cascade:/cascade:\n  currentversion:${{ inputs.tag_name }}/g' "${{ inputs.page_dir }}${{ inputs.docs_dir }}/content/en/${{ steps.folder.outputs.name}}/_index.md"
+            sed -i 's/currentversion: main/currentversion: ${{ inputs.tag_name }}/g' "${{ inputs.page_dir }}${{ inputs.docs_dir }}/content/en/${{ steps.folder.outputs.name}}/_index.md"
       
       - name: Push content
         if: ${{ inputs.dry_run != true }}
